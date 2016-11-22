@@ -1,0 +1,26 @@
+{
+  "name": "schemax",
+  "version": "0.1.0",
+  "description": "SQL database schema extractor for Sqlite3, Mysql and PostgreSQL",
+  "main": "./schemax.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "SQL",
+    "schema"
+    "extractor",
+    "Sqlite3",
+    "PostgreSQL",
+    "Mysql"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/egemadra/schemax.git"
+  },
+  "author": "Ege Madra <egemadra@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "co": "^4.6.0"
+  }
+}
