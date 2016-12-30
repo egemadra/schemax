@@ -313,4 +313,10 @@ Schemax is built to aid the development of ["persistanz"](https://www.npmjs.com/
 
 ## Version history
 
-- v0.1.0 (2016-11-22) - Initial release.
+### v0.1.1 (2016-12-30)
+
+- Sqlite3 adapter column data types are now lowercased.
+- Sqlite3 adapter index types are now uppercased.
+- FIX: Sqlite3 adapter failed to detect auto-increment due to data type letter cases were inconsistent.
+
+### v0.1.0 (2016-11-22) - Initial release.
