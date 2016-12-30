@@ -37,7 +37,7 @@ or the database file for Sqlite3. Other fields are optional for sqlite3.
 - "public" schema is assumed for PostgreSQL.
 */
 var options = {
-  adapter: "mysql", //other options are "sqlite3" and "pg"
+  adapter: "mysql", //other options are "sqlite3" and "pg" or "postgres".
   host: "localhost",
   user: "someuser",  
   password: "somepassword",
@@ -146,6 +146,7 @@ The result is:
               */
               isPK: true, //is primary key? Doesn't appear on non-pk columns.
               isAI: true , //is auto-increment? Doesn't appear on non-pk columns.
+              //except Postgres where any column can have a sequence.
               //Mysql output may also have a comment field here if a comment
               //for the column exists.
             },
@@ -312,6 +313,12 @@ The result is:
 Schemax is built to aid the development of ["persistanz"](https://www.npmjs.com/package/persistanz) as an internal component. It can be considered alfa quality software with very little testing. That said, it does quite a small job so it is unlikely that it has too many major issues. If you have any ideas, bug reports or anything else please open a pull request on the github repository or contact me at egemadra@gmail.com.
 
 ## Version history
+
+### v0.1.2 (2016-12-31)
+
+- FIX: Pg adapter didn't report PKs on columns.
+- FIX: Pg adapter didn't report auto-increments anywhere.
+- Pg adapter can now also be called "postgres".
 
 ### v0.1.1 (2016-12-30)
 
