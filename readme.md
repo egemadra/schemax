@@ -314,6 +314,10 @@ Schemax is built to aid the development of ["persistanz"](https://www.npmjs.com/
 
 ## Version history
 
+### v0.1.3 (2017-01-05)
+
+- FIX: Mysql adapter reported foreign keys with the same name that existed in other other databases.
+
 ### v0.1.2 (2016-12-31)
 
 - FIX: Pg adapter didn't report PKs on columns.

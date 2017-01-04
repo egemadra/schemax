@@ -1,6 +1,6 @@
 {
   "name": "schemax",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "SQL database schema extractor for Sqlite3, Mysql and PostgreSQL",
   "main": "./schemax.js",
   "scripts": {
