@@ -1,7 +1,7 @@
 "use strict";
 
 /* options: {
-  adapter: one of "mysql" / "sqlite3" / "pg" | "postgres"
+  adapter: one of "mysql" / "mysql2" / "sqlite3" / "pg" | "postgres"
   host,
   user,
   password,
@@ -12,9 +12,9 @@
 module.exports = {
 
   extract: options => {
-    var adapterName = options.adapter;
+    let adapterName = options.adapter;
     if (adapterName === 'pg') adapterName = 'postgres';
-    var schemaxAdapter = require("./lib/" + adapterName);
+    const schemaxAdapter = require("./lib/" + adapterName);
     return schemaxAdapter.extract(options);
   }
 

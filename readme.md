@@ -10,10 +10,11 @@ It reads your database schema and returns structure information about tables, co
 npm install schemax --save
 ```
 
-> You will also need to install one of the following database bindings: mysql, postgres, sqlite3:
+> You will also need to install one of the following database bindings: mysql, mysql2, postgres, sqlite3:
 
 ```
 npm install mysql --save
+npm install mysql2 --save
 npm install pg --save
 npm install sqlite3 --save
 ```
@@ -313,6 +314,10 @@ The result is:
 Schemax is built to aid the development of ["persistanz"](https://www.npmjs.com/package/persistanz) as an internal component. It can be considered alfa quality software with very little testing. That said, it does quite a small job so it is unlikely that it has too many major issues. If you have any ideas, bug reports or anything else please open a pull request on the github repository or contact me at egemadra@gmail.com.
 
 ## Version history
+
+### v0.2.0 (2022-05-16)
+
+- mysql2 adapter added to support mysql2 package.
 
 ### v0.1.3 (2017-01-05)
 
